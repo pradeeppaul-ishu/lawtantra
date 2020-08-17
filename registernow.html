@@ -1,154 +1,268 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Register-Now</title>
-        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-        <style>
-            html {
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Black+Ops+One|Lato&display=swap');
+
+*{
     margin: 0;
     padding: 0;
 }
-body {
-    font-family: 'Handlee', cursive;
-    font-size: 13pt;
-    background-color: #efefef;
-    padding: 10px;
-    margin: 0;
-    
+
+body{
+    background-color:#1b1c1e;
 }
-h1 {
-    font-size: 15pt;
-    color: #20bcd5;
+
+
+.startup-page{
+    padding: 4rem;
+    max-width: 534px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.starter-text{
+    display: block;
+    font-size: 2em;
+    color: rgb(255, 201, 140);
+    opacity: 0;
+    letter-spacing: 6px;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: %;
     text-align: center;
-    padding: 18px 0 18px 0;
-    margin: 0 0 10px 0;
 }
-h1 span {
-    border: 4px dashed #20bcd5;
-    padding: 10px;
+
+.starter-text__tab{
+    font-size: 1.2rem;
 }
-p {
-    padding: 0;
-    margin: 0;
+
+.starter-text:nth-of-type(1){
+    animation: fadeIn 2s forwards;
 }
-.img-circle {
-    border: 3px solid white;
-    border-radius: 50%;
+.starter-text:nth-of-type(2){
+    animation: fadeIn 2s 1s forwards;
 }
-.section {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+.starter-text:nth-of-type(3){
+    animation: fadeIn 2s 2s forwards;
+}
+.starter-text:nth-of-type(4){
+    animation: fadeIn 2s 4s forwards;
 }
 
 
+@keyframes fadeIn{
+    100%{
+        opacity: 1;
+    }
+}
 
-form {
+
+.main-container{
+    padding: 1rem 0;
+    margin: auto;
+    font-family: 'Lato',sans-serif;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+}
+
+
+.heading-primary{
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 1;
+    color: #1ed5ad;
     text-align: center;
-    margin-top: 0;
 }
-.submit {
-    background-color: #3fb6b2;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    margin: 0;
-    font-weight: bold;
+
+.heading-primary--sup{
+    font-size: 1.3em;
+}
+
+.heading-primary--sub{
+  font-size: 1.6em;
+  letter-spacing: 10px;
+  display: block;
+}
+
+.heading-title{
+    color: #e4e4e4;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing:4px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+
+.clock{
+    background-color: rgba(97, 93, 93, 0.705);
+    background-image: linear-gradient(106deg,rgb(53, 52, 52) 50%,transparent 50%);
+    border-radius: 4px 4px 0 0;
+    text-transform: uppercase;
+    color: #fafafa;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.clock > *{
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+
+.heading-seconday{
+    font-size:.6rem;
+    line-height: 1.5;
+}
+
+.heading-seconday--ls{
+    letter-spacing: 2px;
+}
+
+.Result-declare{
+    padding: 1rem;
+    background-color:#fafafa;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 2rem;
+}
+
+.text-bold{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bolder; 
+}
+
+.rules{
+    color: rgb(209, 206, 206);
+}
+
+.rules__list{
+    list-style: square;
+    padding-left: 1.2rem;
+}
+
+.rules__item{
+    padding: .5rem;
+}
+
+.heading-Tertiary{
+    color: #f6d849;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-family: 'Black Ops One', cursive;
+}
+
+.copy-right{
+    color: #fafafa;
     text-decoration: none;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid #e7d88d;
+    margin-top: 1rem;
 }
-.submit:hover {
-    background-color: #43a09d;
-}
+    </style>
+    <title>1st Article Writing Contest</title>
+</head>
+<body>
 
-.copyright {
-    font-size: 8pt;
-    text-align: right;
-    padding-bottom: 10px;
-    color: grey;
-}
-</style>
-    </head>
-    
-    <body>
-       
-        <!-- About Me section start -->
-        <div class="section">
-            <h1><span>1st Article Writing by Law तंत्र</span></h1>
-            <p>
-              
-Lawtantra brings to you the first article writing competition to utilize your quarantine and prove your writing skills. Register and win exciting prizes.<br><br>
-<strong>About Lawtantra:</strong><br><br>
-"Lawtantra" is a platform for the student of not only law student but of everyone who is willing to do something unique. We provide a platform for every student across the world to show their talent. We are working for the building the exchange of education among the students. We help all the promising student's startup ideas to reach their destination.<br><br>
+    <div class="startup-page">
+        <h1>
+            <span class="starter-text">ARE</span>
+            <span class="starter-text">YOU</span>
+            <span class="starter-text">READY?</span>
+            <span class="starter-text starter-text__tab">Touch to Continue...</span>
+        </h1> 
+    </div>
 
-<strong>Themes:</strong><br>
-Anything related to Criminal Law<br>
-Indian Evidence Act<br>
-Indian Penal Code<br>
-Criminal Procedure Code<br>
-Anything related to Sports Law<br>
-Doping<br>
-Fixing<br>
-Contractual Issues<br>
-Sports law and relation with other Laws<br><br>
+    <div class="main-container">  
+        <h1 class="heading-primary">
+            <span class="heading-primary--sup">1st Article Writing Contest</span>
+            <span class="heading-primary--sub"> by Law तंत्र</span>
+        </h1>
 
-Youth Empowerment <br>
-How youth can be an example the changing the face of the world (Positive/negative)<br><br><br><br>
+        <h2 class="heading-title"> Write Awesome Article</h2>
 
-
-
-
-<strong>Registration Fee:</strong><br>
-Single Authorship: Rs. 50<br>
-Co-Authorship: Rs. 75<br>
-Submission Guidelines:<br>
-Submit your documents in .doc or. docs format only<br>
-Submission to be made at Lawtantra@gmail.com<br>
-The Cover Page should consist of the Name and College of the Author along with the Title and Theme of the Article
-Article needs to be original; any case of plagiarism found shall lead to disqualification.<br>
-Word Limit: 800-1000 words<br>
-Plagiarism must be below 20%<br>
-Article shall be judged on Legal, Factual, Argumentative and Analytical aspects<br><br>
-<strong>Font:</strong><br>
-Main Body: Times New Roman, 12 pts.<br>
-Footnotes: Times New Roman, 10 pts.<br>
-Line Spacing: 1.5 for the Main Body<br>
-Word limit and plagiarism limit should be strictly followed. Exceeding of any one of them will lead to rejection of the Article<br>
-Registration & Participation Procedure:<br>
-<a href="https://forms.gle/bZr3nvkvvQVuFNDg9" style="text-decoration: none;">  Register on Click</a><br>
-Perks:<br>
-1st Prize: Rs. 900<br>
-2nd Prize: Rs. 500<br>
-Opportunity to be the part of Lawtantra team for Winner<br>
-Next 3 will be awarded with a Certificate of Appreciation<br>
-Guaranteed Publication of Top 4 Articles on Lawtantra Website<br>
-Certificate of Participation for all<br><br>
-<strong>Important Dates:</strong><br>
-Last Date of Registration: 30th June 2020<br>
-Final Draft Submission: 10th July 2020<br>
-Results:18th July 2020<br>
-For queries:<br>
-Email at: Lawtantra@gmail.com<br>
-WhatsApp on +91 84679 29539<br>
-            </p>
-
-            
+        <div class="clock">
+            <div class="clock__start">
+                <h2 class="heading-seconday heading-seconday--ls"> Stating Time  </h2>
+                <h2 class="heading-seconday"> 17 / 08 / 2020 </h2>
+            </div>
+            <div class="clock__end">
+                <h2 class="heading-seconday heading-seconday--ls"> Remaining Time </h2>
+                <h2 class="heading-seconday" id="deadline"></h2>
+            </div>
         </div>
-         <div class="section">
-          
-            <form>
-               <a href="https://forms.gle/bZr3nvkvvQVuFNDg9"  class="submit">Register Now</a>
-                <a href="index.html"  class="submit"> Home</a>
-            </form>
-        </div>
-       
-       
-        <div class="copyright">
-            Copyright © 2020 Lawtantra | All rights reserved 
+
+        <div class="Result-declare">
+            <h2 class="heading-seconday heading-seconday--ls text-bold"> Result On  </h2>
+            <h2 class="heading-seconday" id="deadline"> 02 / 09 / 2020  </h2>
         </div>
         
-    </body>
+        <ul class="rules">
+            <h3 class="heading-Tertiary">Things you need to care about:</h3>
+            <ul class="rules__list">
+                <li class="rules__item">
+                    You can't participate with more than one code.<br>So, participate with your best code only.
+                </li>
+                <li class="rules__item">You can't copy others code.</li>    
+                <li class="rules__item">The winner will be decided on the basis of how well UI & UX is.<i> The Number of upvotes doesn't matter.</i></li>
+                <li class="rules__item">To participate post your code in the comment.</li>
+                <li class="rules__item">Good Luck everyone. You have only 7 days for the contest, So make awesome portfolio.</li>
+         </ul>
+         <a href="https://lawtantra.org" class="copy-right">Copyrights &copy;Lawtantra.org</a>
+    </div> 
+
+<script>
+    
+window.onload = function() {
+    var areWeReady = false;
+    setTimeout(function(){
+        areWeReady = true;
+    }, 5000);
+    document.querySelector('body').addEventListener('click',function()  {
+         if(areWeReady){
+            var main = document.querySelector('.main-container');
+            document.querySelector('.startup-page').style.display= 'none';
+            setTimeout(function() {
+                main.style.display= 'block';
+            }, 100);   
+         }
+    })
+    var deadline = document.getElementById("deadline");
+    var finalTime = new Date("Aug 19 2020 24:00:00").getTime();
+    var intervalId = setInterval(function() {
+    var now = new Date().getTime();
+    var t = finalTime - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    deadline.innerHTML = days +' D / '+ hours
+                         + ' H / '+ minutes + ' M / ' + seconds + ' S';
+  if (t < 0) {
+      clearInterval(intervalId);
+      deadline.innerHTML="Expired.";
+      document.querySelector('.clock').style.backgroundColor = 'red';
+      alert('⚠ Attention Plz :\n Submission is closed now good luck for the next time.⛔📴❌');
+  }
+}, 1000);
+    
+};
+</script>    
+</body>
 </html>
